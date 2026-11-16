@@ -81,6 +81,16 @@ h1 em{font-style:normal;background:linear-gradient(100deg,var(--warm-a),var(--wa
 .ca img{border-radius:16px;width:100%;height:auto;display:block;margin-top:6px;box-shadow:0 10px 30px rgba(0,0,0,.3)}
 .ca .go{font-weight:600;font-size:16px}
 .ca:hover .go{text-decoration:underline}
+.cv h3{margin:14px 0 4px;font-size:19px;font-weight:600;letter-spacing:-.015em}
+.tl{margin:0;padding:0;list-style:none;display:flex;flex-direction:column}
+.tl li{display:grid;grid-template-columns:92px 1fr;gap:16px;padding:12px 0;border-top:1px solid var(--line)}
+.tl li:first-child{border-top:0}
+.tl span{font-size:14px;color:var(--faint);font-variant-numeric:tabular-nums;padding-top:2px;white-space:nowrap}
+.tl p{margin:0;font-size:16px;color:var(--mute)}
+.tl b{color:var(--ink);font-weight:600}
+.tl small{display:block;font-size:14px;color:var(--mute);margin-top:2px;line-height:1.45}
+.cvnote{font-size:14px;color:var(--mute);margin-top:10px!important}
+@media (max-width:520px){.tl li{grid-template-columns:1fr;gap:2px}}
 footer{max-width:600px;margin:clamp(56px,10vh,110px) auto 0;font-size:12px;color:var(--faint)}
 @media (prefers-reduced-motion: no-preference){main > *{animation:in .8s cubic-bezier(.2,.7,.2,1) both}main > *:nth-child(2){animation-delay:.06s}main > *:nth-child(3){animation-delay:.12s}main > *:nth-child(4){animation-delay:.18s}main > *:nth-child(5){animation-delay:.24s}main > *:nth-child(6){animation-delay:.3s}main > *:nth-child(n+7){animation-delay:.34s}}
 @keyframes in{from{opacity:.15;transform:translateY(10px)}to{opacity:1;transform:none}}
@@ -134,6 +144,31 @@ footer{max-width:600px;margin:clamp(56px,10vh,110px) auto 0;font-size:12px;color
     <li><b>2,000+</b><span>editorial cartoons</span></li>
   </ul>
 
+
+  <section class="block cv" id="cv" aria-labelledby="l-cv">
+    <p class="label" id="l-cv">CV</p>
+    <h3>Experience</h3>
+    <ol class="tl">
+      <li><span>2025 –</span><p><b>Founder</b> · CartoonAcademy.gr<small>The first applied arts education platform in Greece</small></p></li>
+      <li><span>2020 –</span><p><b>Head of Brand Design</b> · Archvillain Games<small>Brand and design systems for 3D printed miniatures and tabletop adventures. Visual communication for Erevan’s Guide ($1.1M+ on Kickstarter)</small></p></li>
+      <li><span>2017 –</span><p><b>Lead Artist</b> · McVictor &amp; Hamilton<small>MANCODE Stories comics, MANCODE Magazine covers (with Kathimerini), the “Olympus” 2D animated TV ad</small></p></li>
+      <li><span>2012 –</span><p><b>Editorial Cartoonist</b> · Cartoon Movement<small>Joined at 17, the youngest artist on the platform</small></p></li>
+      <li><span>2024 – 25</span><p><b>Art Teacher</b> · Ameart<small>A one-year art course for teenagers with disabilities</small></p></li>
+      <li><span>2024</span><p><b>Senior Artist</b> · Borpa Token<small>3D sculpting, 2D illustration and comic strips</small></p></li>
+      <li><span>2015 – 19</span><p><b>Sports Cartoonist</b> · Hellenic Broadcasting Corporation<small>“PRESSing” Monday night show</small></p></li>
+      <li><span>2012 – 17</span><p><b>Creative Director</b> · Run &amp; Out<small>Branding for an original children’s sport, awarded by the European Fair Play Movement</small></p></li>
+      <li><span>2016 – 17</span><p><b>Political Cartoonist &amp; UI/UX Designer</b> · iefimerida.gr</p></li>
+      <li><span>2015 – 16</span><p><b>Political Cartoonist &amp; UX Designer</b> · ThePressProject</p></li>
+    </ol>
+    <h3>Education</h3>
+    <ol class="tl">
+      <li><span>2025 –</span><p><b>Byzantine Icon Art &amp; Design</b> · National and Kapodistrian University of Athens<small>With master iconographer Dr. George Kordis. Also Icon Preservation (2025)</small></p></li>
+      <li><span>2015 – 17</span><p><b>M.A. Visual Communication</b> · University of Central Lancashire</p></li>
+      <li><span>2012 – 15</span><p><b>B.A. (Hons) Game Design</b> · University of Central Lancashire</p></li>
+      <li><span>2014</span><p><b>Storyboard Workshop with Kris Pearn</b> · Schoolism, London</p></li>
+    </ol>
+    <p class="cvnote">Languages: Greek, English · Cartoon lessons in Greek public schools since 2012</p>
+  </section>
 
   <section class="contact" aria-labelledby="l-mail">
     <p class="label" id="l-mail">Projects &amp; consultations</p>
