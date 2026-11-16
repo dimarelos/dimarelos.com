@@ -92,7 +92,7 @@ h1 em{font-style:normal;background:linear-gradient(100deg,var(--warm-a),var(--wa
 .cvnote{font-size:14px;color:var(--mute);margin-top:10px!important}
 @media (max-width:520px){.tl li{grid-template-columns:1fr;gap:2px}}
 footer{max-width:600px;margin:clamp(56px,10vh,110px) auto 0;font-size:12px;color:var(--faint)}
-@media (prefers-reduced-motion: no-preference){main > *{animation:in .8s cubic-bezier(.2,.7,.2,1) both}main > *:nth-child(2){animation-delay:.06s}main > *:nth-child(3){animation-delay:.12s}main > *:nth-child(4){animation-delay:.18s}main > *:nth-child(5){animation-delay:.24s}main > *:nth-child(6){animation-delay:.3s}main > *:nth-child(n+7){animation-delay:.34s}}
+@media (prefers-reduced-motion: no-preference){main > *:not(.who){animation:in .8s cubic-bezier(.2,.7,.2,1) both}main > *:nth-child(2){animation-delay:.06s}main > *:nth-child(3){animation-delay:.12s}main > *:nth-child(4){animation-delay:.18s}main > *:nth-child(5){animation-delay:.24s}main > *:nth-child(6){animation-delay:.3s}main > *:nth-child(n+7){animation-delay:.34s}}
 @keyframes in{from{opacity:.15;transform:translateY(10px)}to{opacity:1;transform:none}}
 </style>
 
@@ -100,7 +100,7 @@ footer{max-width:600px;margin:clamp(56px,10vh,110px) auto 0;font-size:12px;color
 <body>
 <main>
   <header class="who">
-    <img src="img/portrait.webp" alt="Dimitris Dimarelos" width="120" height="120">
+    <img src="img/portrait-240.webp" alt="Dimitris Dimarelos" width="120" height="120" fetchpriority="high">
     <p class="name">Dimitris Dimarelos<span>Designer, artist &amp; creative consultant</span></p>
     <h1>Design, art and production, <em>from first idea to finished product.</em></h1>
     <p class="lead">14+ years across games, publishing, advertising and TV. <b>Head of Brand Design at Archvillain Games</b>, Lead Artist at McVictor &amp; Hamilton, founder of Cartoon Academy.</p>
@@ -110,11 +110,11 @@ footer{max-width:600px;margin:clamp(56px,10vh,110px) auto 0;font-size:12px;color
     <p class="label" id="l-work">Selected work</p>
     <div class="work">
       <a href="https://www.kickstarter.com/projects/archvillaingames/erevans-guide-to-death-and-beyond-a-5e-tome/description" target="_blank" rel="noopener">
-        <div class="th"><img src="img/erevan.webp" alt="Erevan’s Guide to Death &amp; Beyond, open book" width="1800" height="1255" style="object-position:70% 50%"></div>
+        <div class="th"><img src="img/erevan-600.webp" srcset="img/erevan-600.webp 600w, img/erevan-1200.webp 1200w" sizes="(max-width:520px) 92vw, 290px" loading="lazy" decoding="async" alt="Erevan’s Guide to Death &amp; Beyond, open book" width="1800" height="1255" style="object-position:70% 50%"></div>
         <b>Erevan’s Guide to Death &amp; Beyond ↗</b><small>Kickstarter · $1.1M+, #1 D&amp;D 5E campaign of 2024</small>
       </a>
       <a href="https://gamefound.com/en/projects/archvillain-games/archvillain-encounters-death--beyond" target="_blank" rel="noopener">
-        <div class="th"><img src="img/accessories.webp" alt="Archvillain Encounters boxes, cards and miniatures" width="1800" height="1800"></div>
+        <div class="th"><img src="img/accessories-600.webp" srcset="img/accessories-600.webp 600w, img/accessories-1200.webp 1200w" sizes="(max-width:520px) 92vw, 290px" loading="lazy" decoding="async" alt="Archvillain Encounters boxes, cards and miniatures" width="1800" height="1800"></div>
         <b>Archvillain Encounters: Death &amp; Beyond ↗</b><small>Gamefound · Boxes, cards, tokens and screens</small>
       </a>
     </div>
@@ -124,7 +124,7 @@ footer{max-width:600px;margin:clamp(56px,10vh,110px) auto 0;font-size:12px;color
     <span class="k">New · CartoonAcademy.gr</span>
     <h2>The first applied arts digital platform in Greece.</h2>
     <p>A complete 3-year course in cartoons, comics and animation, with 52 modules a year.</p>
-    <img src="img/cartoonacademy.webp" alt="Cartoon Academy platform on a laptop" width="1800" height="1322">
+    <img src="img/cartoonacademy-600.webp" srcset="img/cartoonacademy-600.webp 600w, img/cartoonacademy-1200.webp 1200w" sizes="(max-width:600px) 85vw, 520px" loading="lazy" decoding="async" alt="Cartoon Academy platform on a laptop" width="1800" height="1322">
     <span class="go">Visit Cartoon Academy ›</span>
   </a>
 
